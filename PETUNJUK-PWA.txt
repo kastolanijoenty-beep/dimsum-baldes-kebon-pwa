@@ -1,0 +1,22 @@
+DIMSUM BALDES KEBON — PAKET PWA AWAL
+
+ISI PAKET
+- index.html: aplikasi utama dengan logo yang sudah tertanam
+- manifest.webmanifest: identitas dan ikon instalasi PWA
+- service-worker.js: cache dasar aplikasi
+- icons/: ikon 192 dan 512 piksel
+
+CARA MEMASANG
+Paket ini harus diunggah ke hosting yang mendukung HTTPS. Membuka index.html langsung dari folder (file://) tidak akan mengaktifkan instalasi PWA.
+
+Setelah dihosting dengan HTTPS:
+1. Buka alamat aplikasi di Chrome/Edge pada laptop atau Chrome Android.
+2. Pilih menu Install app / Pasang aplikasi (atau Add to Home screen / Tambahkan ke layar utama).
+3. Ikuti konfirmasi pemasangan.
+
+CATATAN PENTING
+- Ini adalah tahap PWA awal/instalable shell, belum tahap produksi final.
+- Aplikasi masih memuat Tailwind CSS, Google Fonts, Lucide, dan modul Firebase dari internet. Karena itu, fungsi/tampilan lengkap belum dijamin berjalan offline.
+- Penyimpanan lokal saat ini berbasis browser/perangkat. Data laptop dan HP belum otomatis tersinkron tanpa konfigurasi Firebase dan autentikasi pemilik.
+- Sebelum dipakai untuk data usaha sebenarnya, perlu uji seluruh menu, konfigurasi database dan login, serta fitur restore cadangan.
+- Jangan menghapus data browser atau mengandalkan satu perangkat sebagai satu-satunya tempat penyimpanan data.
